@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Cordel';
+    src: url(../cordel.otf) format('opentype');
+}
+
+
+:root{
+    --cor01:#F2C84B;
+    --cor2:#D9B95B;
+    --cor03:#D9B26A;
+    --cor04:#F2DDB6;
+    --cor05:#0D0D0D;
+
+    --fonte-destaque: 'Cordel', sans-serif;
+    --fonte-rodape: monospace;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: var(--cor04);
+    font-family: var(--fonte-padrao);
+}
+header{
+    background-color: var(--cor01);
+    color: var(--cor05);
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-variant: small-caps;
+}
+header>h1{
+    padding-top: 50px;
+    font-size: 12vh;
+}
+header>p{
+    padding-top: 10px;
+    padding-bottom: 50px;
+    color: var(--cor03);
+    font-size: 1.5em;
+}
+header>p>a{
+    text-decoration: none;
+    color: var(--cor03);
+}
+header>p>a:hover{
+    color: var(--cor01);
+    background-color: var(--cor05);
+    border-radius: 10px;
+    padding: 5px;
+}
+main{
+    background-color: var(--cor04);
+}
+main>section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 4vh;
+}
+main>section.imagem{
+    color: white;
+    background-color: var(--cor03);
+}
+main>section.normal>p{
+    padding-bottom: 2em;
+}
+main>section.imagem>p{
+    background-color: rgba(0, 0, 0, 0.363);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+main>section#img01{
+    background: var(--cor03) url(../imagens/background001.jpg) right center no-repeat fixed;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.441);
+}
+main>section#img02{
+    background: var(--cor03) url(../imagens/background002.jpg) right center no-repeat fixed;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.441);
+}
+footer{
+    background-color: var(--cor01);
+    text-align: center;
+    color: var(--cor05);
+    padding: 10px;
+    font-family: var(--fonte-rodape);
+}
+footer>p>a{
+    text-decoration: none;
+    color: #0D0D0D;
+    font-weight: bold;
+}
+footer>p>a:hover{
+    background-color: var(--cor05);
+    color: var(--cor01);
+    padding: 2px;
+}
